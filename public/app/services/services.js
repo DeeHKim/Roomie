@@ -58,7 +58,7 @@ angular.module('roomie.services', [])
         url: 'api/profile/yes',
         data: user
       }).then(function(res) {
-        return;
+        return res.data;
       });
     };
 
@@ -68,7 +68,7 @@ angular.module('roomie.services', [])
         url: 'api/profile/no',
         data: user
       }).then(function(res) {
-        return response.data;
+        return res.data;
       });
     };
 
