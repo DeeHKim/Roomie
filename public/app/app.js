@@ -1,4 +1,4 @@
-var myApp = angular.module('roomie', ['roomie.auth', 'roomie.services', 'roomie.main', 'ui.router', 'ngMaterial', 'ngAria', 'ngAnimate', 'ngMessages'])
+var myApp = angular.module('roomie', ['roomie.auth', 'roomie.services', 'roomie.main', 'roomie.contact', 'ui.router', 'ngMaterial', 'ngAria', 'ngAnimate', 'ngMessages'])
   .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
     $urlRouterProvider.otherwise('/');
@@ -15,7 +15,7 @@ var myApp = angular.module('roomie', ['roomie.auth', 'roomie.services', 'roomie.
         controller: 'AuthController'
       })
       .state('contact', {
-        templateUrl: 'contact/contact.html',
+        templateUrl: 'app/contact/contact.html',
         url: '/contact',
         controller: 'ContactController',
         authenticate: true
