@@ -31,3 +31,7 @@
   transition-property: background-color, box-shadow, -webkit-transform;
   transition-property: background-color, box-shadow, transform;
 }
+
+.userimage {
+  width: 100%;
+}
